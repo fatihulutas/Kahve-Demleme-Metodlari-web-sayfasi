@@ -28,13 +28,4 @@ Bu proje herhangi bir hazır framework (Bootstrap vb.) kullanılmadan, tamamen "
 
 ---
 
-## Ekran Görüntüleri
-
-| Ana Sayfa | Demleme Detayı |
-|-----------|----------------|
-| ![Ana Sayfa](pages/images/v60.PNG) | ![V60 Sayfası](pages/images/chemex.PNG) |
-*(Not: Görseller temsilidir, projeyi indirdiğinizde güncel halini görebilirsiniz.)*
-
----
-
 Fatih Ulutaş / 25151513012
