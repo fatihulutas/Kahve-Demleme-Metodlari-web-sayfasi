@@ -1,0 +1,155 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #EFEBE9;
+    color: #3E2723;
+    line-height: 1.6;
+}
+
+nav {
+    background-color: #4E342E;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: #FFF;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #BCAAA4;
+    text-decoration: none;
+}
+
+.container {
+    width: 80%;
+    max-width: 900px;
+    margin: 30px auto;
+    background-color: #FFF;
+    padding: 40px;
+    border: 2px solid #D7CCC8;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+h1#header {
+    color: #5D4037;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+h3 {
+    text-align: center;
+    color: #795548;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+blockquote {
+    background-color:#FFF8DC;
+    border-left: 5px solid #5D4037;
+    padding: 15px;
+    margin: 20px 0;
+    font-style: italic;
+}
+
+#method {
+    font-size: 20px;
+    color: #3E2723;
+    border-bottom: 2px solid #D7CCC8;
+    padding-bottom: 5px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.ulasim {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.ulasim a {
+    display: inline-block;
+    background-color: #6D4C41;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 0 5px;
+    transition: background-color 0.3s;
+}
+
+.ulasim a:hover {
+    background-color: #8D6E63;
+}
+
+.coffee {
+    border: 2px solid #E0E0E0;
+    background-color: #FAFAFA;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+.imageAndHint p a {
+    font-size: 18px;
+    font-weight: bold;
+    color: #4E342E;
+    text-decoration: none;
+}
+
+.imageAndHint ul {
+    margin-top: 10px;
+    margin-left: 20px;
+    color: #5D4037;
+}
+
+img {
+    border-radius: 50%;
+    border: 3px solid #8D6E63;
+    transition: transform 0.3s;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+.hints {
+    background-color: #EFEBE9;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px dashed #8D6E63;
+}
+
+.hints ul li {
+    margin-bottom: 8px;
+    list-style-type: square;
+}
+
+#turnBack {
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+    color: #6D4C41;
+    font-weight: bold;
+	text-decoration: none;
+}
+
+h6 {
+    margin-top: 20px;
+    color: #9E9E9E;
+    border-top: 1px solid #EEE;
+    padding-top: 10px;
+}

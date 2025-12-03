@@ -1,78 +1,131 @@
 <!DOCTYPE html>
 
-<html>
+<html lang = "tr">
 
-	<head>
-		<title>Kahve Demleme Rehberi</title>
-	</head>
+<head>
+	<meta charset = "UTF-8">
 	
-	<body>
+	<title>Kahve Demleme Rehberi</title>
 	
-	<nav>
-			<a href="KAHVEDEMLEMEMETODLARI.html">Ana sayfa</a>
+	<link rel = "stylesheet" href = "style/index_style.css">
+
+</head>
+	
+<body>
+	
+	<div>
+		<nav>
+			<a href="index.html">Ana sayfa</a>
 			<a href="pages/hakkinda.html" target = "_blank">Hakkında</a>
 			<a href="pages/iletisim.html" target = "_blank">İletişim</a>
-			
+				
 		</nav>
+	</div>	
 	
-	<h1 id = "header" >Kahve Rehberine Hoşgeldiniz!</h1>
-	<h3>Kendi <mark>mükemmel</mark> fincanını demle...</h3>
-		<blockquote>V60, French Press, AeroPress, Cold Brew — adım adım rehberler ve ipuçlarıyla kahveni en iyi şekilde hazırla.</blockquote>
-		<blockquote><a href = "#hint">İpuçları</a> <a href = "#method">Metodlar</a></blockquote>
-	<p id = "method"><i><b>Demleme metodları</b></i></p>
-		<blockquote>Lütfen tercih ettiğiniz demleme metodu hakkında detaylı bilgi edinmek için üzerine tıklayınız.</blockquote>
-		<ol type = "I">
+	<div class = "container">
+	
+		<h1 id = "header" >Kahve Rehberine Hoşgeldiniz!</h1>
+		<h3>Kendi mükemmel fincanını demle...</h3>
 		
-			<li><p><a href = "pages/v60.html" target = "_blank" > V60 - Pour Over</a></p></li>
-				<ul>
-					<li>Zorluk: Orta</li>
-					<li>Demleme Süresi: 3-4 dakika</li>
-				</ul>	
-		<a href = "pages/v60.html" target = "_blank" ><img src = "pages/images/v60.PNG" alt = "V60 - Pour Over" height = "100px" width = "100px"></a>
+		<blockquote>V60, French Press, AeroPress, Cold Brew — adım adım rehberler ve ipuçlarıyla kahveni en iyi şekilde hazırla.</blockquote>
+			
+		<div class = "ulasim">	
+			<a href = "#hint">İpuçları</a> 
+			<a href = "#method">Metodlar</a>
+		</div>
+		
+		<p id = "method"><i><b>Demleme metodları</b></i></p>
+			<blockquote>Lütfen tercih ettiğiniz demleme metodu hakkında detaylı bilgi edinmek için üzerine tıklayınız.</blockquote>
+		
+		<div class = "coffee">
+			<div class = "imageAndHint">
+				<p><a href = "pages/v60.html" target = "_blank" > V60 - Pour Over</a></p>
+					<ul>
+						<li>Zorluk: Orta</li>
+						<li>Demleme Süresi: 3-4 dakika</li>
+					</ul>
+			</div>			
+			<a href = "pages/v60.html" target = "_blank"> 
+				<img src = "pages/images/v60.PNG" alt = "V60 - Pour Over" height = "100px" width = "100px">
+			</a>
+		</div>	
+		
 		<br>
 		
-			<li><p><a href = "pages/chemex.html" target = "_blank" > Chemex</a></p></li>
-				<ul>
-					<li>Zorluk: Orta</li>
-					<li>Demleme Süresi: 3-4 dakika</li>
-				</ul>
-		<a href = "pages/chemex.html" target = "_blank" ><img src = "pages/images/chemex.PNG" alt = "Chemex" height = "100px" width = "100px"></a>
-		<br>		
-			<li><p><a href = "pages/frenchPress.html" target = "_blank" > French Press </a></p></li>
-				<ul>
-					<li>Zorluk: Kolay</li>
-					<li>Demleme Süresi: 4 dakika</li>
-				</ul>
-		<a href = "pages/frenchPress.html" target = "_blank" ><img src = "pages/images/frenchPress.PNG" alt = "French Press" height = "100px" width = "100px"></a>
-		<br>		
-			<li><p><a href = "pages/aeropress.html" target = "_blank" > Aeropress </a></p></li>
-				<ul>
-					<li>Zorluk: Orta</li>
-					<li>Demleme Süresi: 2 dakika</li>
-				</ul>
-		<a href = "pages/aeropress.html" target = "_blank" ><img src = "pages/images/aeropress.PNG" alt = "Aeropress" height = "100px" width = "100px"></a>
-		<br>		
-			<li><p><a href = "pages/coldBrew.html" target = "_blank" > Cold Brew</a></p></li>
-				<ul>
-					<li>Zorluk: Kolay</li>
-					<li>Demleme Süresi: 12-18 saat</li>
-				</ul>
-		<a href = "pages/coldBrew.html" target = "_blank" ><img src = "pages/images/coldBrew.PNG" alt = "Cold Brew" height = "100px" width = "100px"></a>
-		<br>		
-		</ol>
+		<div class = "coffee">
+			<div class = "imageAndHint" >
+				<p><a href = "pages/chemex.html" target = "_blank" > Chemex</a></p>
+					<ul>
+						<li>Zorluk: Orta</li>
+						<li>Demleme Süresi: 3-4 dakika</li>
+					</ul>
+			</div>		
+			<a href = "pages/chemex.html" target = "_blank" >
+				<img src = "pages/images/chemex.PNG" alt = "Chemex" height = "100px" width = "100px">
+			</a>
+		</div>
 		
+		<br>		
 		
+		<div class = "coffee">
+			<div class = "imageAndHint">
+				<p><a href = "pages/frenchPress.html" target = "_blank" > French Press </a></p>
+					<ul>
+						<li>Zorluk: Kolay</li>
+						<li>Demleme Süresi: 4 dakika</li>
+					</ul>
+			</div>		
+			<a href = "pages/frenchPress.html" target = "_blank" >
+			<img src = "pages/images/frenchPress.PNG" alt = "French Press" height = "100px" width = "100px">
+			</a>
+		</div>
+		
+		<br>
+		
+		<div class = "coffee">
+			<div class = "imageAndHint">
+				<p><a href = "pages/aeropress.html" target = "_blank" > Aeropress </a></p>
+					<ul>
+						<li>Zorluk: Orta</li>
+						<li>Demleme Süresi: 2 dakika</li>
+					</ul>
+			</div>		
+			<a href = "pages/aeropress.html" target = "_blank" >
+			<img src = "pages/images/aeropress.PNG" alt = "Aeropress" height = "100px" width = "100px">
+			</a>
+		</div>
+		
+		<br>
+
+		<div class = "coffee">
+			<div class = "imageAndHint">
+				<p><a href = "pages/coldBrew.html" target = "_blank" > Cold Brew</a></p>
+					<ul>
+						<li>Zorluk: Kolay</li>
+						<li>Demleme Süresi: 12-18 saat</li>
+					</ul>
+			</div>		
+			<a href = "pages/coldBrew.html" target = "_blank" >
+			<img src = "pages/images/coldBrew.PNG" alt = "Cold Brew" height = "100px" width = "100px">
+			</a>
+		</div>	
+		
+		<br> 
+				
 		<p id = "hint"><b>Hızlı İpuçları</b></p>
-		<ul>
-		<li>Taze çekirdek kullan, kavrulma tarihine dikkat et.</li>
-		<li>Su ısısı: 90–96°C (kaynadıktan sonra 30 sn bekle).</li>
-		<li>Bloom (ön ıslatma) lezzeti artırır ve filtre kağıdının tadının kahveye geçmesini engeller (V60 ve Chemex)</li>
-		</ul>
+		<div class = "hints">
+			<ul>
+				<li>Taze çekirdek kullan, kavrulma tarihine dikkat et.</li>
+				<li>Su ısısı: 90–96°C (kaynadıktan sonra 30 sn bekle).</li>
+				<li>Bloom (ön ıslatma) lezzeti artırır ve filtre kağıdının tadının kahveye geçmesini engeller (V60 ve Chemex)</li>
+			</ul>
+		</div>	
 
 
-	<a href="#header" > Sayfanın başına gitmek için tıklayınız. </a>
+		<a href="#header" id = "turnBack"> Sayfanın başına dönmek için tıklayınız </a>
 
-<h6>&copy; Kahve Demleme Metodları</h6>
+		<h6 style="text-align:center">&copy; 2025 Kahve Demleme Metodları</h6>
+	</div>
 
-	</body>
+</body>
 </html>

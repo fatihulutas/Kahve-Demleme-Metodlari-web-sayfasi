@@ -1,0 +1,149 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #EFEBE9;
+    color: #3E2723;
+    line-height: 1.6;
+}
+
+nav {
+    background-color: #4E342E;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: #FFF;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #BCAAA4;
+}
+
+.container {
+    width: 80%;
+    max-width: 900px;
+    margin: 30px auto;
+    background-color: #FFF;
+    padding: 40px;
+    border: 2px solid #D7CCC8;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+h1#header, h1 {
+    color: #5D4037;
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #D7CCC8;
+    padding-bottom: 10px;
+}
+
+blockquote {
+    background-color: #FFF8DC;
+    border-left: 5px solid #5D4037;
+    padding: 15px;
+    margin: 20px 0;
+    font-style: italic;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+.container p a {
+    color: #6D4C41;
+    font-weight: bold;
+}
+
+.tablo table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.tablo caption {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #4E342E;
+}
+
+.tablo th {
+    background-color: #6D4C41;
+    color: #FFF;
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #5D4037;
+}
+
+.tablo td {
+    padding: 10px;
+    border: 1px solid #D7CCC8;
+    vertical-align: middle;
+}
+
+.akisSemasi {
+    margin-top: 30px;
+}
+
+.akisSemasi ol {
+    padding-left: 20px;
+}
+
+.akisSemasi li {
+    margin-bottom: 40px;
+    font-weight: bold;
+    color: #4E342E;
+}
+
+img {
+    display: block;
+    margin: 15px auto;
+    width: 200px;    
+    height: auto;
+    border: 3px solid #8D6E63;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+#not {
+    background-color: #FFEBEE;
+    color: #B71C1C;
+    padding: 15px;
+    border: 1px solid #EF9A9A;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+#turnBack {
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+    color: #6D4C41;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+h6 {
+    text-align: center;
+    margin-top: 30px;
+    color: #9E9E9E;
+    border-top: 1px solid #EEE;
+    padding-top: 10px;
+}
