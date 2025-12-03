@@ -28,4 +28,4 @@ Bu proje herhangi bir hazır framework (Bootstrap vb.) kullanılmadan, tamamen "
 
 ---
 
-#Fatih Ulutaş / 25151513012
+# Fatih Ulutaş / 25151513012
