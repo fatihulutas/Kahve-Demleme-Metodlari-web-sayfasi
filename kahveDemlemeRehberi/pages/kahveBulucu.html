@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kahve Seçim Asistanı</title>
+    <link rel="stylesheet" href="../style/pages_style.css">
+    
+    <style>
+        .secim-kutusu {
+            background-color: #FAFAFA;
+            border: 2px dashed #D7CCC8;
+            padding: 30px;
+            margin: 20px 0;
+            border-radius: 10px;
+            text-align: center;
+        }
+        
+        select {
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #8D6E63;
+            margin-bottom: 20px;
+            width: 80%;
+            max-width: 300px;
+            background-color: white;
+        }
+
+        button.bul-btn {
+            background-color: #4E342E;
+            color: white;
+            padding: 12px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button.bul-btn:hover {
+            background-color: #6D4C41;
+            transform: scale(1.05);
+        }
+
+        #sonucAlani {
+            display: none;
+            margin-top: 30px;
+            border-top: 2px solid #8D6E63;
+            padding-top: 20px;
+            animation: fadeIn 1s;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+	<div>
+		<nav>
+			<div class ="nav-left">
+				<span class ="site-name">Kahve Demleme Rehberi</span>
+			</div>
+			
+			<div class ="nav-center">
+				<a href ="../index.html">
+					<img src ="images/logo.PNG" alt="Logo" class ="main-logo">
+				</a>
+			</div>
+
+			<div class ="nav-right">
+				<a href ="kahveBulucu.html" style ="color: #FFF;" target = "_blank">Hangi Metot?</a>
+				
+				<a href ="hakkinda.html" target ="_blank">Hakkında</a>
+				<a href ="iletisim.html" target ="_blank">İletişim</a>
+			</div>
+		</nav>
+	</div>	
+    
+    <div class="container">
+        <h1 id="header">Hangi Kahve Sana Göre?</h1>
+        <blockquote>Kararsız mı kaldın? İki soruda sana en uygun demleme yöntemini bulalım!</blockquote>
+
+        <div class="secim-kutusu">
+            <h3>1. Nasıl bir tat arıyorsun?</h3>
+            <select id="tatTercihi">
+                <option value="yogun">Yoğun, Gövdeli ve Sert</option>
+                <option value="berrak">Berrak, Yumuşak ve Aromatik</option>
+            </select>
+
+            <h3>2. Ne kadar vaktin var?</h3>
+            <select id="zamanTercihi">
+                <option value="hizli">Hızlı olsun</option>
+                <option value="yavas">Acelem yok</option>
+            </select>
+            
+            <br><br>
+            
+            <button class="bul-btn" onclick="kahveOner()">Bana Kahvemi Bul!</button>
+        </div>
+
+        <div id="sonucAlani">
+            <h2 id="sonucBaslik" style="color:#4E342E;"></h2>
+            <p id="sonucAciklama"></p>
+            <img id="sonucResim" src="" alt="Sonuç Kahve" style="width: 200px; height: 200px; object-fit: cover;">
+            <br>
+            <a id="sonucLink" href="#" style="font-weight: bold; font-size: 18px; color: #D84315;">Detaylı Bilgi İçin Tıkla &rarr;</a>
+        </div>
+
+        <h6>&copy; Kahve Demleme Metodları</h6>
+    </div>
+
+    <script>
+        function kahveOner() {
+            let tat = document.getElementById("tatTercihi").value;
+            let zaman = document.getElementById("zamanTercihi").value;
+
+            console.log("--- Kahve Seçimi Başladı ---");
+            console.log("Seçilen Tat: " + tat);
+            console.log("Seçilen Zaman: " + zaman);
+
+            let oneriBaslik = "";
+            let oneriMetin = "";
+            let oneriResim = "";
+            let oneriLink = "";
+
+            
+            if (tat === "yogun") {
+                if (zaman === "hizli") {
+                    // Yoğun + Hızlı = Aeropress
+                    oneriBaslik = "Sana Önerim: AEROPRESS";
+                    oneriMetin = "Hem hızlı hem de yoğun bir kahve istiyorsun. Aeropress basınç gücüyle sana espressoya yakın sert bir tat sunar.";
+                    oneriResim = "images/aeropress.PNG"; 
+                    oneriLink = "aeropress.html";
+                } else {
+                    // Yoğun + Yavaş = French Press
+                    oneriBaslik = "Sana Önerim: FRENCH PRESS";
+                    oneriMetin = "Vaktin var ve gövdeli bir kahve istiyorsun. Metal filtresi sayesinde tüm kahve yağları fincanına geçer.";
+                    oneriResim = "images/frenchPress.PNG";
+                    oneriLink = "frenchPress.html";
+                }
+            } else {
+                if (zaman === "hizli") {
+                    // Yumuşak + Hızlı = V60
+                    oneriBaslik = "Sana Önerim: V60 (POUR OVER)";
+                    oneriMetin = "Hızlı ama temiz bir içim arıyorsun. V60, kağıt filtresiyle tortusuz ve aromatik bir kahve sunar.";
+                    oneriResim = "images/v60.PNG";
+                    oneriLink = "v60.html";
+                } else {
+                    // Yumuşak + Yavaş -> Chemex
+                    oneriBaslik = "Sana Önerim: CHEMEX";
+                    oneriMetin = "Keyif yapacaksın ve pürüzsüz bir tat istiyorsun. Chemex şık sunumu ve kalın filtresiyle en berrak kahveyi verir.";
+                    oneriResim = "images/chemex.PNG";
+                    oneriLink = "chemex.html";
+                }
+            }
+
+            document.getElementById("sonucBaslik").innerText = oneriBaslik;
+            document.getElementById("sonucAciklama").innerText = oneriMetin;
+            document.getElementById("sonucResim").src = oneriResim;
+            document.getElementById("sonucLink").href = oneriLink;
+
+            document.getElementById("sonucAlani").style.display = "block";
+            
+            console.log("Sonuç gösterildi: " + oneriBaslik);
+        }
+    </script>
+
+</body>
+</html>
