@@ -15,7 +15,7 @@ Bu web sitesi, 4 yıllık kahve sektörü deneyimimi ve yazılım öğrenme sür
 - **Püf Noktalar:** Her metod için su sıcaklığı, kahve oranı ve öğütme tavsiyeleri.
 - **Görsel Anlatım:** Adım adım resimli demleme talimatları.
 - **Responsive Tasarım:** Temiz ve okunaklı CSS yapısı.
-- **Kararsız Kullanıcı Dostu:** "Bana Kahvemi Bul" butonu ile kararsız kullanıcılar yerine demleme metotu önerisi.
+- **Kararsız Kullanıcı Dostu:** "Bana Kahvemi Bul" butonu ile kararsız kullanıcılar için demleme metotu önerisi.
 
 ---
 
