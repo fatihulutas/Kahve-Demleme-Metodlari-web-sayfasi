@@ -15,7 +15,7 @@ Bu web sitesi, 4 yıllık kahve sektörü deneyimimi ve yazılım öğrenme sür
 - **Püf Noktalar:** Her metod için su sıcaklığı, kahve oranı ve öğütme tavsiyeleri.
 - **Görsel Anlatım:** Adım adım resimli demleme talimatları.
 - **Responsive Tasarım:** Temiz ve okunaklı CSS yapısı.
-- **İletişim:** Ziyaretçilerin soru sorabileceği iletişim sayfası.
+- **Kararsız Kullanıcı Dostu:** "Bana Kahvemi Bul" butonu ile kararsız kullanıcılar yerine demleme metotu önerisi.
 
 ---
 
@@ -25,6 +25,7 @@ Bu proje herhangi bir hazır framework (Bootstrap vb.) kullanılmadan, tamamen "
 
 - ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 - ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+- ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
 ---
 
